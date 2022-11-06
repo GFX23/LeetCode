@@ -1,9 +1,10 @@
-// Desc. Given array of int, check if there exist two int i and j which:
+// Desc.: Given array of int, check if there exist two int i and j which:
 // i != j
 // 0 <= i, j < arr.length
 // arr[i] == 2 * arr[j]
 
-// Expl.
+// Expl.: Iterating through array, looking for number which will meet condition 
+// num === arr[i] * 2 && idx !== i
 
 const checkIfExist = (arr: number[]): boolean => {
   for (let i = 0; i < arr.length; i++) {
