@@ -1,6 +1,6 @@
-// Given two arrays [nums1, nums2] and two numbers [m,n], merge them together while keep length of first arrays at m+n
+// Description: Given two arrays [nums1, nums2] and two numbers [m,n], merge them together while keep length of first arrays at m+n
 
-//Expl. Iterating through array nums1 by length of m+n, if m = 0, then replace nums1 pos with nums2 pos one by one.
+// Expl.: Iterating through array nums1 by length of m+n, if m = 0, then replace nums1 pos with nums2 pos one by one.
 // else if nums1idx is higher than nums2
 
 /**
