@@ -1,6 +1,6 @@
 // Description: Remove duplicates from array
 
-// Expl. Iterating through whole array looking for same number on idx+1 position. While found, removing with .splice and decreased counter by 1
+// Expl.: Iterating through whole array looking for same number on idx+1 position. While found, removing with .splice and decreased counter by 1
 
 const removeDuplicates = (nums: number[]): number => {
   for (let i = 0; i < nums.length; i++) {
