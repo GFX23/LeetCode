@@ -1,4 +1,19 @@
-function validMountainArray(arr: number[]): boolean {
+// Description: Given an array of integers arr, return true if and only if it is a valid mountain array.
+//
+// Recall that arr is a mountain array if and only if:
+//
+// arr.length >= 3
+// There exists some i with 0 < i < arr.length - 1 such that:
+// arr[0] < arr[1] < ... < arr[i - 1] < arr[i]
+// arr[i] > arr[i + 1] > ... > arr[arr.length - 1]
+
+// Expl.: First function check if array has valid length >= 3, after that, 
+// if first two and last two elements of array meet inclining and declining requirement, 
+// then iterating through array and if conditions are not met, returning false, otherwise returning true.
+
+
+
+const validMountainArray = (arr: number[]): boolean => {
   if (arr.length < 3) {
     console.log("yes1");
     return false;
