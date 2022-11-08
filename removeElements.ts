@@ -1,6 +1,6 @@
 // Description: Remove all occurences if given element from array.
 
-// Expl. Iterating through array, while removed element is found, removing him from array through .splice, decresing counter by one.
+// Expl.: Iterating through array, while removed element is found, removing him from array through .splice, decresing counter by one.
 
 const removeElement = (nums: number[], val: number): number => {
   for (let i = 0; i < nums.length; i++) {
