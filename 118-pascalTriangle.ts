@@ -10,7 +10,7 @@
 // Expl.: Bellow
 
 
-function generate(numRows: number): number[][] {
+const generateTriangle = (numRows: number): number[][] => {
   let output = [[1]]
 
   // Creating forloop for "n-times" by numRows and initializing empty array
@@ -33,7 +33,7 @@ function generate(numRows: number): number[][] {
 };
 
 
-console.log(generate(5))
-console.log(generate(8))
-console.log(generate(3))
-console.log(generate(20))
+console.log(generateTriangle(5))
+console.log(generateTriangle(8))
+console.log(generateTriangle(3))
+console.log(generateTriangle(20))
