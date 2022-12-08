@@ -7,3 +7,18 @@
 // Those numbers for which this process ends in 1 are happy.
 // Return true if n is a happy number, and false if not.
 
+function isHappy(n: number): boolean {
+  let count = 0
+  while (n > 1) {
+      let number: string[] = n.toString().split("")
+      for (let i = 0; i < number.length ; i++) {
+          count += parseInt(number[i])**2
+      }
+      n = count
+      if (count === 1) {
+      return true
+  }
+  count = 0
+  }
+  return false
+};
