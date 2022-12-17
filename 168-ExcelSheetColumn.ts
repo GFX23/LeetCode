@@ -9,7 +9,6 @@
 // AA -> 27
 // AB -> 28 
 
-
 // Expl.: Setting while loop, which will divide number by 26 when bigger than 26.
 //        Using % operator setting rest number from 26 division, (decreasing num by 1 for zero case and incresing by one at char pos) will create final string.
 
