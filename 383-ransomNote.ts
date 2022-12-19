@@ -23,5 +23,4 @@ const canConstruct = (ransomNote: string, magazine: string): boolean => {
 canConstruct("a", "b")
 canConstruct("aa", "ab")
 canConstruct("aa", "aab")
-canConstruct("aab", "baa")
 canConstruct("bg", "efjbdfbdgfjhhaiigfhbaejahgfbbgbjagbddfgdiaigdadhcfcj")
