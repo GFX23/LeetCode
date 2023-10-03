@@ -6,12 +6,31 @@
 
 
 const twoSum = (nums: number[], target: number): number[] | void => {
+
+  // nested forloop solution
+  //for (let i = 0; i < nums.length; i++) {
+  //    for (let j = i+1; j < nums.length; j++) {
+  //        if ((nums[i] + nums[j]) == target) return [i, j]
+  //    }
+  //}
+
+  //  better solution with O(n)
+  const map = {}
   for (let i = 0; i < nums.length; i++) {
-      for (let j = i+1; j < nums.length; j++) {
-          if ((nums[i] + nums[j]) == target) return [i, j]
-      }
-  }
-};
+
+    const missingNum = target - nums[i]
+
+    if (map.hasOwnProperty(missingNum)) {
+      return [map[missingNum], i]
+    }
+
+    // handle the case when current num is 0
+    if (nums[i] === 0 && map[missingNum] !== undefined) {
+      return [map[missingNum], i]
+    }
+    map[nums[i]] = i
+  };
+}
 
 console.log(twoSum([2,7,11,15],9))
 console.log(twoSum([3,2,4],6))
