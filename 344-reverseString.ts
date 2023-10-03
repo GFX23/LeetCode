@@ -13,17 +13,16 @@ Example 2:
 Input: s = ["H","a","n","n","a","h"]
 Output: ["h","a","n","n","a","H"]*/
 
-const reverseString = (s:string[]): void => {
+const reverseString = (s:string[]): string[] => {
   let length = s.length-1
 
   for (let i = 0; i < length; i++) {
-
-    // creating buffer
-    let prevChar = s[i]
-    s[i] = s[length]
-    s[length] = prevChar
+    [s[i], s[length]] = [s[length], s[i]]
     length--
   }
+
+  return s
 }
 
+console.log(reverseString(["J", "a", "v", "a", "s", "c", "r", "i", "p", "t"]))
 // ofc you can use .reverse()
