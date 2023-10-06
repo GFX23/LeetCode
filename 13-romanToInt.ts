@@ -55,3 +55,5 @@ const romanToInt = (s: string): number => {
 console.log(romanToInt("III"))
 console.log(romanToInt("LVIII"))
 console.log(romanToInt("MCMXCIV"))
+
+// run ts-node 13-romanToInt.ts
