@@ -24,15 +24,23 @@ You need to output 2. */
 
 // ------------------------ SOLUTION 1 -------------------------- //
 
-// 
+// Modified "Two-Pointer approach" with shifting, overall it seems that this has better performace than classic two-pointer.
 // Time complexity: O(n log n)
 // Space complexity: O(log n)
 
 const findContentChildren = (g: number[], s: number[]): number => {
+
+  // Sorting arrays
   g.sort((a,b) => a-b)
   s.sort((a,b) => a-b)
+
+  // setting result variable
   let childrenFed = 0
+
+  // iteration until s.length is true (length 0 == undefined)
   while (s.length) {
+
+    // we are comparing always 0 value, also in run-time its more readable
     if (s[0] >= g[0] ) {
       console.log("before shift",g,s)
       s.shift()
@@ -49,7 +57,7 @@ const findContentChildren = (g: number[], s: number[]): number => {
 
   // ------------------------ SOLUTION 2 -------------------------- //
 
-// 
+// Classic two-pointer approach, with conditions
 // Time complexity: O(n log n)
 // Space complexity: O(log n)
 
