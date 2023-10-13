@@ -28,9 +28,10 @@ Ashe is poisoned for seconds 1, 2, and 3, which is 3 seconds in total. */
 
 // ------------------------ SOLUTION -------------------------- //
 
-// 
-// Time complexity: 
-// Space complexity: 
+// Iterating through timeSeries nums, checking if the next num is less than duration away from the current num.
+// If so, add the difference to total. If not, add duration to total.
+// Time complexity: O(n)
+// Space complexity: O(1)
 
 const findPoisonedDuration = (timeSeries: number[], duration: number): number => {
   let total = 0;
