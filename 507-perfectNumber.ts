@@ -20,27 +20,26 @@ Output: false */
 
 // ------------------------ SOLUTION -------------------------- //
 
-// 
-// Time complexity: 
-// Space complexity: 
+//
+// Time complexity: O(n)
+// Space complexity: O(1)
 
 const checkPerfectNumber = (num: number): boolean => {
   if (num === 1) return false;
   let sum = 0;
 
-  for (let i = 0; i <= num/2; i++) {
+  for (let i = 0; i <= num / 2; i++) {
     if (num % i === 0) sum += i;
   }
 
   return sum === num;
-}
-
+};
 
 // --------------------------- LOGS --------------------------- //
 
-console.log(checkPerfectNumber(28))
-console.log(checkPerfectNumber(7))
-console.log(checkPerfectNumber(1))
+console.log(checkPerfectNumber(28));
+console.log(checkPerfectNumber(7));
+console.log(checkPerfectNumber(1));
 
 // ----------------------- CLI COMMAND ------------------------ //
 
